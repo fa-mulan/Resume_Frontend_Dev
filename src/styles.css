@@ -70,6 +70,13 @@ a {
     letter-spacing: 0.05em;
 }
 
+.fontM28 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.05em;
+}
+
 .fontM36 {
     font-family: Montserrat;
     font-weight: 600;

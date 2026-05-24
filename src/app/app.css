@@ -5,12 +5,8 @@
     margin: 0 auto;
 }
 
-h1 {
-    text-align: center;
-}
-
 .main {
-    height: 500px;
+    height: 470px;
 }
 
 .hr {
@@ -18,26 +14,116 @@ h1 {
 }
 
 .header {
-    height: 150px;
+     max-width: 1100px;
+    height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-
+    width: 75px;
+    height: 75px;
 }
 
-.grid img {
+.resume {
+    color: rgb(60, 188, 231);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.grid {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 1200px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    /* border: 1px solid gray; */
+}
+
+.grid figure img {
     display: block;
     width: 300px;
     height: 300px;
     border-radius: 150px;
+    /* border: 1px solid gray; */
+    grid-column: 1;
+    grid-row: 1/4;
+    /* justify-items: center; */
+    /* align-items: center; */
 }
 
-.footer img {
+figure {
+    width: 300px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.avatat {
+    width: 100%;
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, .7);
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+.text {
+    /* height: 500px; */
+    /* border: 1px solid gray; */
+    grid-column: 2/4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.blue:hover {
+    color: rgb(60, 188, 231);
+    cursor: pointer;
+}
+
+.contacts {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid gray; */
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.contacts img {
     width: 30px;
     height: 30px;
 }

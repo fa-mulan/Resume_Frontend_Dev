@@ -3,14 +3,14 @@
     <img class="logo" src="logo.jpg" alt="logo">
   </a>
   <a routerLink="/">
-    <h1>Resume</h1>
+    <h2 class="resume fontM28">Resume</h2>
   </a>
   <div class="nav">
     <a routerLink="./education">
-      <h2 class="fontM18 font-grafit">Education</h2>
+      <h3 class="fontM18 font-grafit blue">Education</h3>
     </a>
     <a routerLink="./skills">
-      <h2 class="fontM18 font-grafit">Skills</h2>
+      <h3 class="fontM18 font-grafit blue">Skills</h3>
     </a>
   </div>
 </header>
@@ -18,22 +18,39 @@
 <hr class="hr content">
 
 <main class="main content">
-
+  <h1 class="title font-grafit">Olena Soroka | Frontend Developer</h1>
   <div class="grid">
-    <h2>Title</h2>
-    <img class="avatar" src="avatar.jpg" alt="">
-    <div class="content">
-      <router-outlet />
-      <p class="about">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam nihil necessitatibus
-        animi
-        blanditiis assumenda veritatis consequuntur rerum, quibusdam magnam corporis debitis earum dolorum! Fuga eius
-        maiores cum dicta voluptatibus.</p>
+    <figure>
+      <img class="avatar" src="avatar.jpg" alt="avatar">
+      <figcaption>
+        <p class="myPersonality">Mostly I am a happy camper and a people person, in some cases can be a mover and
+          shaker.</p>
+      </figcaption>
+    </figure>
+    <!-- <img class="avatar" src="avatar.jpg" alt="avatar"> -->
+    <div class="text">
+      <p class="font-grafit fontM18">Hello! My name is Olena. <br>
+        I like Frontend because it allows to create
+        beautiful, convenient, and useful applications. <br><br>
+        I studied Frontend at CyberBionic Systematics.<br>
+        You can see my test results
+        <a class="blue" routerLink="./education">here</a><br><br>
+        My soft skills correspond to the Agile philosophy.<br>
+        My English level is B2.<br>
+        My hard skills include HTML5, CSS3, JS, TypeScript, Angular.<br>
+        You can find out more
+        <a class="blue" routerLink="./skills">here</a><br><br>
+        I would like to develop my knowledge and skills in Frontend and am currently looking
+        for my first company and team for an internship.
+      </p>
+    </div>
+    <div class="contacts">
+      <a href="#"><img class="telegram" src="github.png" alt="github"></a>
+      <a href="https://t.me/alena_40a/"><img class="telegram" src="telegram.png" alt="telegram"></a>
+      <a href="#"><img class="telegram" src="linkedin.png" alt="linkedin"></a>
     </div>
   </div>
 </main>
 
 <hr class="hr content">
-
-<footer class="footer content">
- <a href="https://t.me/alena_40a/"><img class="telegram" src="telegram.png" alt="telegram"></a>
-</footer>
+<router-outlet />
