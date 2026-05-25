@@ -127,3 +127,9 @@ figure:hover figcaption {
     width: 30px;
     height: 30px;
 }
+
+.routerOutlet {
+    margin: 0 auto;
+    width: 1400px;
+    height: 300px;
+}
