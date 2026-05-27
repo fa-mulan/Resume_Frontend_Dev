@@ -6,7 +6,7 @@
 }
 
 .main {
-    height: 470px;
+    height: 380px;
 }
 
 .hr {
@@ -14,11 +14,25 @@
 }
 
 .header {
-     max-width: 1100px;
+    max-width: 1000px;
     height: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 160px;
+}
+
+.headerElemLogo {
+    display: flex;
+    justify-content: center;
+}
+
+.headerElem {
+    width: 200px;
+}
+
+.headerElem h2 {
+    text-align: center;
 }
 
 .logo {
@@ -32,23 +46,23 @@
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 40px;
 }
 
 .title {
-    text-align: center;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .grid {
+    max-width: 1100px;
     margin: 0 auto;
     margin-top: 10px;
     width: 1200px;
-    height: 400px;
+    height: 370px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     /* border: 1px solid gray; */
@@ -61,7 +75,7 @@
     border-radius: 150px;
     /* border: 1px solid gray; */
     grid-column: 1;
-    grid-row: 1/4;
+    grid-row: 1;
     /* justify-items: center; */
     /* align-items: center; */
 }
@@ -72,7 +86,7 @@ figure {
     /* overflow: hidden; */
 }
 
-.avatat {
+.avatar {
     width: 100%;
     width: 300px;
     height: 300px;
@@ -102,8 +116,7 @@ figure:hover figcaption {
     /* height: 500px; */
     /* border: 1px solid gray; */
     grid-column: 2/4;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row: 1/3;
 }
 
 .blue:hover {
@@ -120,7 +133,7 @@ figure:hover figcaption {
     align-items: center;
     /* border: 1px solid gray; */
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 2;
 }
 
 .contacts img {

@@ -1,30 +1,44 @@
+.edu {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(60, 188, 231);
+}
+
 .grid {
     margin: 0 auto;
     margin-top: 10px;
-    width: 1360px;
-    height: 280px;
+    width: 1100px;
+    /* height: 280px; */
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     transition: 0.5s;
+    justify-items: center;
 }
 
 .grid img {
     width: 150px;
     height: 200px;
-    border: 1px solid rgb(60, 188, 231);
+    /* border: 1px solid rgb(60, 188, 231); */
 }
 
-.grid .frontend:hover {
+/* .grid .frontend:hover {
     transition: 1s;
     transform: scale(1.3);
     color: rgb(60, 188, 231);
     text-decoration: underline;
-}
+} */
 
 .grid h4 {
     margin-bottom: 3px;
+    margin-top: 10px;
     text-align: center;
+    transition: 1s;
 }
 
 .grid div {
@@ -38,8 +52,9 @@
     transition: 0.5s;
 }
 
-.grid .engB2:hover {
+.grid h4:hover {
     transition: 1s;
     transform: scale(1.5);
     color: rgb(60, 188, 231);
+    text-decoration: underline;
 }
